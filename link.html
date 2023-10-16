@@ -220,37 +220,34 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
         <script>
-            $(document).ready(function() {
-  let num = 1;
+            $(document).ready(function () {
+                let num = 1;
 
-  $('.change').on('click', function() {
-    event.preventDefault();
-    if (num === 5) {
-      alert("còn lâu đi lêu lêu...");
-    } else {
-      w = Math.floor(Math.random() * 100);
-      h = Math.floor(Math.random() * 100);
-      $(this).css({
-        top: h + '%',
-        left: w + '%',
-        position: 'fixed'
-      });
-      num++;
-      console.log(num);
-    }
-  });
+                $('.change').on('click', function () {
+                    event.preventDefault();
+                    if (num === 5) {
+                        alert("còn lâu đi lêu lêu...");
+                    } else {
+                        w = Math.floor(Math.random() * 100);
+                        h = Math.floor(Math.random() * 100);
+                        $(this).css({
+                            top: h + '%',
+                            left: w + '%',
+                            position: 'fixed'
+                        });
+                        num++;
+                        console.log(num);
+                    }
+                });
 
-  $('.ok').on('click', function(event) {
-    event.preventDefault();
-    alert("Đồng ý sớm có phải đáng yêu không đồ ngốc <3");
+                $('.ok').on('click', function (event) {
+                    event.preventDefault();
+                    alert("Đồng ý sớm có phải đáng yêu không đồ ngốc <3");
 
-    // Chuyển trang sau 5 giây
-    setTimeout(function() {
-      window.location.href = '123.html';
-    }, 2000); // 5000 milliseconds (5 seconds)
-  });
-});
+                    window.location.href = "123.html";
+                });
+            });
+
         </script>
 </body>
-
 </html>
